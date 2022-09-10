@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(247, 249, 242);
+  }
+  
+  ul.topnav li {
+    float: left;
+}
+  
+  ul.topnav li a {
+    display: block;
+    color: rgb(19, 18, 18);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover:not(.active) {background-color: rgb(108, 114, 109);}
+  
+  ul.topnav li a.active {background-color: #686f6c;}
+  
+  ul.topnav li.right {float: right;}
+  
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+    
+  } 
+  .banner{
+    height: 400px;
+    width: 100%;
+    padding-left: 1vh;
+    margin-left: 0;
+    margin-right: 2em;
+    border-radius: 10px;
+    background-image: url(img/2.jpg);
+    transition: 0.1s ease;
+    animation: change 7s infinite; 
+  }
+  @keyframes change{
+    50%
+    {background: url(img/3.webp);}
+    100%{background: url(img/2.jpg);}
+   
+  }
+  .center{
+    margin: 15%;
+    margin-top: 4%;
+  }
+  .box {
+    width: 15vw;
+    height: 20vh;
+    margin: 30px;
+    border: 3px solid #1F2833;
+    transition: .3s ease;
+    float: left;
+    border-radius: 10px;
+    background-size: cover;
+  }
+  .men{
+    padding: 1em;
+    background-image: url(img/menhome.jpg); 
+  }
+  .men:hover{
+    transform: scale(1.1);
+  }
+  .women{
+    padding: 1em;
+    background-image: url(img/womenhome.jpg);
+  }
+  .women:hover{
+    transform: scale(1.1);
+  }
+  .kids{
+    padding: 1em;
+    background-image: url(img/kids.jpg);
+
+  }
+  .kids:hover{
+    transform: scale(1.1);
+  }
+  
+  @media only screen and (max-width: 1024px)  {
+    .box {
+        margin: 10px;
+        margin-top: 30px;
+    }
+  }
+  @media only screen and (max-width: 426px) {
+    .box {
+        width: 80%;
+    }
+  }
+  @media only screen and (max-width: 320px)  {
+    .banner {
+        display: none;
+    }
+  }

@@ -1,0 +1,98 @@
+body{
+    background-image: url(img/menbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.top{
+  background-color: rgba(0,0,0,0.3);
+  padding: 0.5em;
+  align-items: center;
+  border-radius: 10PX;
+}
+ul.topnav {
+list-style-type: none;
+margin: 0;
+padding: 0;
+border-radius: 20px;
+overflow: hidden;
+background-color: rgba(49, 173, 249, 0.4)
+}
+
+ul.topnav li {
+float: left;
+}
+
+ul.topnav li a {
+display: block;
+color: rgb(19, 18, 18);
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: rgb(108, 114, 109);}
+
+ul.topnav li a.active {background-color: #686f6c;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+ul.topnav li.right, 
+ul.topnav li {float: none;}
+} 
+.banner{
+    margin: 4em;
+    border: 3px double burlywood;
+    border-radius: 10px;
+    transition: 0.1s ease;
+    animation: change 7s infinite; 
+  }
+  .center{
+    margin: 15%;
+    margin-top: 8%;
+  }
+  .shirts{
+    margin: 40%;
+    padding: 1em;
+    background-image: url(img/mentop.jpg);
+    background-size: cover;
+    width: 15vw;
+    height: 20vh;
+    margin: 30px;
+    border: 3px solid #1F2833;
+    float: left;
+    border-radius: 10px;
+  }
+  .shirts:hover{
+    transform: scale(1.1);
+  }
+  .tshirts{
+    padding: 1em;
+    background-image: url(img/tshirt.jpg);
+    background-size: cover;
+    width: 15vw;
+    height: 20vh;
+    margin: 30px;
+    border: 3px solid #1F2833;
+    transition: .3s ease;
+    float: left;
+    border-radius: 10px;
+  }
+  .tshirts:hover{
+    transform: scale(1.1);
+  }
+  .phants{
+    padding: 1em;
+    background-image: url(img/phants.jpg);
+    background-size: cover;
+    width: 15vw;
+    height: 20vh;
+    margin: 30px;
+    border: 3px solid #1F2833;
+    transition: .3s ease;
+    float: left;
+    border-radius: 10px;
+  }
+  .phants:hover{
+    transform: scale(1.1);
+  }

@@ -1,0 +1,70 @@
+body{
+    background-image: url(img/kidsboysbg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  padding-left: 1em;
+  padding-right: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid gray;
+  margin-left: 10em;
+  margin-right: 10em;
+
+}
+img {
+  max-width: 100%;
+  border: 2px dotted black;
+}
+.two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2em;
+  
+}
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: #555;
+    color: rgb(255, 255, 255);
+  }
+.text {
+  padding-left: 20px;
+  text-align: center;
+}
+ 
+@media screen and (min-width: 400px) {
+    body {
+      background-image: url(img/kidsboysbg.jpg);
+    }
+    .container two text {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      }
+
+}
+hr{
+  margin-left: 7em;
+  margin-right: 7em;
+}
+@media screen and (max-width: 800px) {
+  .container two text {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
